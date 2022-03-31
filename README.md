@@ -1,6 +1,5 @@
-## <center>Calculator</center>
+## <p align="center">Calculator</p>
 
-
-<hr>
+</br>
 
 * Criando uma calculadora utilizando **Bootstrap** e **JavaScript.**
