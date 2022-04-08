@@ -58,21 +58,22 @@
 
     <script>
       function calcular(tipo, valor) {
-          if (tipo === 'acao') {
-            if ( valor === 'c') {
+          if (['acao'].includes(tipo)) {
+            if (['c'].includes(valor)) {
               document.getElementById('resultado').value = ''
             }
-            if (valor === '+' || valor === '-' || valor === '*' || valor === '/' || valor === '.') {
+            if (['+', '-', '*', '/', '.'].includes(valor)) {
               document.getElementById('resultado').value += valor
             }
-            if (valor === '=') {
+            if (['='].includes(valor )) {
               let campo_valor = eval(document.getElementById('resultado').value)
               document.getElementById('resultado').value = campo_valor
             }
-         } else if(tipo === 'valor') {
+         } else if(['valor'].includes(tipo)) {
            document.getElementById('resultado').value += valor
          } 
       }
+      
     </script>
   </body>	
 
